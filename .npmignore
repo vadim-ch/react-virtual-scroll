@@ -1,0 +1,23 @@
+### IDE Files ###
+.idea
+*.iml
+.vscode
+
+### src ###
+/src
+/.github
+.editorconfig
+.gitignore
+global.d.ts
+preprocessor.js
+README.md
+sonatype.sbt
+tsconfig.json
+tslint.json
+typings.json
+webpack.config.js
+!/public/
+
+### NPM files ###
+/node_modules
+npm-debug.log
