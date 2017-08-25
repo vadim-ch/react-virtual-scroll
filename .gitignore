@@ -4,9 +4,7 @@
 .vscode
 
 ### Build artifacts ###
-/public/dist
-/public/index.html
-/tmpBuild
+/build
 
 ### NPM files ###
 /node_modules
