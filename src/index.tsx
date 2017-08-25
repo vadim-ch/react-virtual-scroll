@@ -58,7 +58,6 @@ export class VirtualScroll extends React.PureComponent<IProps, IState> {
     const { list, bufferSize } = this.props;
     const { renderIndex, rowSize, hiddenHeight } = this.state;
     const renderList = list.slice(renderIndex, bufferSize + renderIndex);
-    console.error(renderList[0].props.id);
     const heightWrapper = ((list.length - renderList.length) * rowSize) - hiddenHeight;
     const style = {
       paddingBottom: `${heightWrapper}px`,

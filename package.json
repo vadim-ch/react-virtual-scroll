@@ -5,9 +5,8 @@
   "main": "./build/index.js",
   "typings": "./build/index.d.ts",
   "scripts": {
-    "build:dev": "webpack --env=dev --progress --profile --colors",
-    "build:prod": "rm -rf ./public/dist/* && webpack -p --env=prod --progress --profile --colors",
-    "dev": "webpack-dev-server --env=hot-dev --progress --profile --colors",
+    "build": "tsc",
+    "precommit": "npm test",
     "test": "./node_modules/jest-cli/bin/jest.js"
   },
   "repository": {
