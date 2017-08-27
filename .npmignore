@@ -15,4 +15,6 @@ tslint.json
 
 ### NPM files ###
 /node_modules
+package-lock.json
+react-virtual-scroll*.tgz
 npm-debug.log

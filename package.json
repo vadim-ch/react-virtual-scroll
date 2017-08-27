@@ -5,7 +5,8 @@
   "main": "./build/index.js",
   "typings": "./build/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf ./build/* && tsc",
+    "prepublish": "npm run build",
     "precommit": "npm test",
     "test": "./node_modules/jest-cli/bin/jest.js"
   },

@@ -9,13 +9,7 @@
 ### NPM files ###
 /node_modules
 npm-debug.log
+react-virtual-scroll*.tgz
 
 ### MAAAAC ###
 .DS_Store
-
-### Settings ###
-/src/settings.ts
-/src/settings.js
-
-/typings/*
-!/typings/global.d.ts
