@@ -8,7 +8,7 @@
     "build": "rm -rf ./build/* && tsc",
     "prepublish": "npm run build",
     "precommit": "npm test",
-    "test": "./node_modules/jest-cli/bin/jest.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,30 @@
     "url": "https://github.com/vadim-ch/react-virtual-scroll/issues"
   },
   "homepage": "https://github.com/vadim-ch/react-virtual-scroll#readme",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  },
   "devDependencies": {
+    "@types/enzyme": "^2.8.6",
+    "@types/jest": "^20.0.8",
     "@types/react": "^16.0.5",
     "@types/react-dom": "^15.5.4",
+    "enzyme": "^2.9.1",
+    "jest": "^20.0.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "ts-jest": "^20.0.10",
     "typescript": "^2.4.2"
   }
 }

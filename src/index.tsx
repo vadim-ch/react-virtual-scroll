@@ -77,7 +77,6 @@ export class VirtualScroll extends React.PureComponent<IProps, IState> {
     const { rowSize } = this.state;
     const target = event.target;
     const lastHiddenIndex = Math.floor(target.scrollTop / rowSize);
-    // const renderIndex = (lastHiddenIndex - this.step) < 0 ? 0 : (lastHiddenIndex - this.step);
     const hiddenHeight = rowSize * lastHiddenIndex;
     // const lastHiddenIndex = this.calculateHiddenIndex();
     // const hiddenHeight = this.calculateHiddenHeight(lastHiddenIndex);
